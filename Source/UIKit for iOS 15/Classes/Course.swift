@@ -20,12 +20,12 @@ class Course {
     var sections: [Section]
 
     init(title: String!, subtitle: String!, description: String!, icon: UIImage!, banner: UIImage!, authors: [String]? = nil, colors: [CGColor]? = nil, background: UIImage? = nil, sections: [Section] = []) {
-        self.courseTitle = title
+        self.courseTitle = NSLocalizedString(title, comment: title)
         self.courseIcon = icon
         self.courseAuthor = authors
         self.courseBanner = banner
-        self.courseDescription = description
-        self.courseSubtitle = subtitle
+        self.courseDescription = NSLocalizedString(description, comment: description)
+        self.courseSubtitle = NSLocalizedString(subtitle, comment: subtitle)
         self.courseGradient = colors
         self.courseBackground = background
         self.sections = sections

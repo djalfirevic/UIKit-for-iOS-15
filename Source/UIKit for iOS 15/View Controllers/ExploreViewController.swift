@@ -64,7 +64,6 @@ class ExploreViewController: UIViewController {
     }
 }
 
-
 extension ExploreViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == sectionsCollectionView {
